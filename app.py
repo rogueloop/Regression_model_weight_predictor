@@ -18,4 +18,4 @@ def hello():
     return render_template("index.html" , height = height ,inches = height_inch ,weight=weight)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
