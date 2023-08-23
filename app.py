@@ -16,7 +16,7 @@ def hello():
         height_inch = cm_to_inches(float(height))
         weight = weightPredict.weigthPredict([[float(height_inch)]])
         return render_template("index.html" , height = height ,inches = height_inch ,weight=weight)
-    return render_template("index.html" , height = height ,inches = height_inch ,weight=weight)
+    return render_template("index.html")
 
 if __name__ == "__main__":
     app.run()
